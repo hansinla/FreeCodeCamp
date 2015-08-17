@@ -1,0 +1,38 @@
+#online {
+    font-size: 1.5em;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px !important;
+    }
+
+#offline {
+    font-size: 1.5em;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px !important;
+    }
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: font-size  0.2s ease;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.input-group {
+    display:inline-block;
+}
+
+.thumb{
+/*    max-width: 64px;
+*/    max-height: 64px;
+}
