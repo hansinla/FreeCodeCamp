@@ -105,6 +105,7 @@ background: #E24040;
 }
 
 .copyright {
+    font-size: .7em;
     color: #6D6D6D;
     background: #E9E9E9;
     padding: 20px 0;
@@ -126,8 +127,8 @@ font-size: 20px;
 color:#fff;
 margin: 4px;
 }
-/* Header 
-----------------------------------------------*/
+
+/* ----------------------------------- Header --------------------------------------*/
 .header {
     position: fixed;
     width: 100%;
@@ -143,16 +144,16 @@ margin: 4px;
     background-color: #CC4646;
 }
 .header .navbar {
-margin: 0;
-background: transparent !important;
+	margin: 0;
+	background: transparent !important;
 }
-    .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #CC4646;*/;
-    }
+.navbar-inverse .navbar-toggle .icon-bar {
+	<!-- background-color: #CC4646; -->
+}
 
-    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #CC4646;
-    }
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background: #CC4646;
+}
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #CC4646;
@@ -173,7 +174,9 @@ background: none;
 }	
 .navbar-toggle {
 }
+
 /*.carousel-inner*/
+
 #myCarousel {
     margin-top: 50px;
     border-bottom: 4px solid #CC4646;
@@ -229,12 +232,12 @@ background: none;
     padding: 16px 15px;
     line-height: 18px;
     height: 50px;
-    /*color:#CC4646;*/;
-}
+/*    color:#CC4646;
+*/}
 
 .navbar-brand b {
     color: #fff;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Helvetica';
 	font-weight:400;
 }
 
@@ -579,8 +582,8 @@ display: inherit;
   font-size: 1.3em;
 }
 
-/* Services
-    -------------------------------------------------*/
+/* -------------------------  Services ----------------------*/
+
 .grid .text-content {
     padding-left: 35%;
 }
@@ -611,8 +614,8 @@ display: inherit;
     font-size: 4.5em;
     top: 36px;
 }
-/* Team
-    ---------------------------------------------------*/
+
+/* ------------------------   Team   ----------------------------------------*/
 .team-member {
     margin-bottom: 15px;
 }
@@ -693,7 +696,7 @@ display: inherit;
 
     #portfolio article p {
         margin-bottom: 1.45em;
-        /*set next row on the baseline*/;
+        /*set next row on the baseline*/
     }
 
 nav#filter {

@@ -5,10 +5,7 @@
 	position: relative;
 	margin: 4% auto;
 	overflow: hidden;
-	/*background: transparent url(../images/waves.gif) repeat 0% 0%;
-	border-top: 8px solid #efc34a;
-	border-bottom: 8px solid #efc34a;
-	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;*/ 
+
 	-webkit-transition: background-position 1s ease-out 0.3s;
 	-moz-transition: background-position 1s ease-out 0.3s;
 	-o-transition: background-position 1s ease-out 0.3s;
@@ -22,6 +19,7 @@
 	top: 0px;
 	left: 0px; 
 	text-align: left;
+	text-shadow: 5px 5px 10px #000;
 }
 .da-slide-current{
 	z-index: 1000;
@@ -39,6 +37,7 @@
 	position: absolute;
 	opacity: 0;
 	left: 110%;
+	text-shadow: 2px 2px 5px #111 !important;
 }
 .da-slider-fb .da-slide h2,
 .da-slider-fb .da-slide p,
@@ -78,10 +77,10 @@
 	top: 70px;
 	height: 256px;
 	line-height: 320px;
-	left: 110%; /*60%*/
+	left: 110%;
 }
 .da-slide .da-link{
-	top: 270px; /*depends on p height*/
+	top: 270px;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	border: 3px solid rgba(255,255,255,0.8);
