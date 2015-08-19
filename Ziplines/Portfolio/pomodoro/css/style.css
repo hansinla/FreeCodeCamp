@@ -1,0 +1,24 @@
+html{
+	font-family: 'Inconsolata', monospace;
+}
+
+.clock{
+	min-width: 827px;
+	font-weight: bold;
+}
+
+#hours{
+	font-size: 128px;
+	position: absolute;
+	top: 110px;
+	left: 190px;
+	width: 100%;
+}
+
+#mins{
+	font-size: 128px;
+	position: absolute;
+	top: 110px;
+	left: 430px;
+	width: 100%;
+}

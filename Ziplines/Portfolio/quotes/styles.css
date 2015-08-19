@@ -1,0 +1,39 @@
+h1{
+  padding-top: 50px;
+  font-size: 80px;
+  color: #377BB5;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px white;
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+  background: url("images/books.jpg");
+  background-size: cover;
+}
+
+#quote{
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 50%;
+  height: 100px;
+  margin-left: 25%;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.quote{
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.name{
+  text-align: right;
+  padding: 5px;
+}
+
+.center-btn{
+  text-align: center;
+  padding-top: 20px;
+}

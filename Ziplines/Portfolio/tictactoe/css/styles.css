@@ -1,0 +1,25 @@
+.header_buffer{
+	padding-top: 20px;
+}
+
+h2{
+	color: white;
+	background-color: green;
+	margin: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	width: 350px;
+	text-align: center;
+}
+
+.nav li:hover {
+    cursor: pointer;
+}
+
+.gameBoard img:hover {
+    cursor: pointer;
+}
+
+.center{
+	text-align: center;
+}
