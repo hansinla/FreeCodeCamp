@@ -1,24 +1,52 @@
-html{
-	font-family: 'Inconsolata', monospace;
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/digital.ttf')  format('truetype');
 }
 
-.clock{
-	min-width: 827px;
+body{
+	font-family: Helvetica;
+	background-color: #EED8AE;
+}
+
+h1{
 	font-weight: bold;
+	color: red;
+	-webkit-filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.5));
+	filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.5));
+	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: gray;
+	margin-top: 50px;
+	padding: 20px;
+	border: solid 2px black;
+	border-radius: 5px;
 }
 
-#hours{
-	font-size: 128px;
-	position: absolute;
-	top: 110px;
-	left: 190px;
-	width: 100%;
+#timer-house{
+	height: 330px;
+	margin-top: 50px;
+	padding: 20px;
+	border: solid 2px black;
+	border-radius: 20px;
+	background-color: #D1BEA8;
+	-webkit-filter: drop-shadow(15px 15px 15px rgba(0,0,0,0.5));
+	filter: drop-shadow(15px 15px 15px rgba(0,0,0,0.5));
+
 }
 
-#mins{
-	font-size: 128px;
-	position: absolute;
-	top: 110px;
-	left: 430px;
-	width: 100%;
+#time{
+	font-family: 'digital', monospace;
+	font-size: 100px;
+	margin: 5px 10px 10px 10px;
+	padding: 5px;
+	border: solid 2px black;
+	border-radius: 20px;
+	background-color: #8EA58B;
+	-webkit-filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.5));
+	filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.5));
 }
+
+.btn-width{
+	width: 80px;
+	margin-bottom: 5px;
+}
+
