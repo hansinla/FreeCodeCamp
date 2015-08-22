@@ -1,7 +1,11 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
 @font-face {
-  font-family: 'digital';
-  src: url('../fonts/digital.ttf')  format('truetype');
+	font-family:"Digital-7 Mono";
+	src: url("../fonts/digital-7__mono_.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
 }
+
 
 body{
 	font-family: Helvetica;
@@ -34,10 +38,9 @@ h1{
 }
 
 #time{
-	font-family: 'digital', monospace;
-	font-size: 100px;
+	font-family: 'Digital-7 Mono', monospace;
+	font-size: 8em;
 	margin: 5px 10px 10px 10px;
-	padding: 5px;
 	border: solid 2px black;
 	border-radius: 20px;
 	background-color: #8EA58B;

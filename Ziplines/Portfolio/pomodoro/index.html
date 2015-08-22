@@ -7,8 +7,10 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.comjquery-migrate-1.2.1.min.js"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- Latest compiled and minified Bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js"></script>
 	<!-- Local JS -->
 	<script src="clock.js"></script>
 
@@ -37,7 +39,11 @@
 				</div>
 
 			<div id="timer-house">
-				<div id="time" class="row">25:00</div>
+				<div ng-app="myApp">
+  					<div ng-controller="TimeCtrl">
+    					<p id="time">{{ clock | date:'mm:ss'}}</p>
+  					</div>
+				</div>
 				<div class="row">
   						<button type="button" class="btn btn-default btn-width" >-</button>
   						<button type="button" class="btn btn-default btn-width" onclick="playSound('sound1')">break</button>
