@@ -3,9 +3,10 @@
  */
 
 var bouncer = function(arr) {
-	
-  return (typeof(arr) == 'boolean');
-}
+  return arr.filter(function(val){
+  	if (val) return true;
+  });
+};
 
 debug(bouncer([7, 'ate', '', false, 9]));
 

@@ -18,6 +18,6 @@ var where = function(arr, num) {
 	}
 
 	return arr.length;
-}
+};
 
 debug(where([40, 60], 50));

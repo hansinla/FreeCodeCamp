@@ -1,12 +1,5 @@
 var end = function(str, target) {
-	var compStr = str.slice( -target.length);
-	// debug(compStr);
+	return (str.slice( -target.length) === target);
+};
 
-  if (compStr === target) {
-  	return true;
-  } else {
-  	return false;
-  }
-}
-
-debug(end('Bastian', 'n'));
+debug(end('Bastian', 'ian'));

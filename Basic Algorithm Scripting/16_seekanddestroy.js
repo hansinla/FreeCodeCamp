@@ -3,8 +3,6 @@ Remove all values (last argument(s))
 from an array (first argument)
 and return as a new array.
 */
-'use strict';
-
 var destroyer = function(arr) {
 	var srcArray = arguments[0]; //special pseudo array in JS functions
 	var values = [];

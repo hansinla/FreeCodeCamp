@@ -8,14 +8,14 @@ var where = function(collection, source) {
   var arr = [];
   for (var i = 0; i < collection.length; i++) {
   	var thisObject = collection[i];
-  	for (key in thisObject) {
+  	for (var key in thisObject) {
   		if (thisObject[key] == source[key]){
   			arr.push(thisObject);
   		}
   	}
   }
   return arr;
-}
+};
 
 debug(where([{ first: 'Romeo', last: 'Montague' }, 
 	{ first: 'Mercutio', last: null }, 

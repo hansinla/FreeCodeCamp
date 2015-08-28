@@ -1,18 +1,8 @@
 function palindrome(str) {
-  str = str.toLowerCase();
-  str = str.replace(/[^a-z]/g, "");
-  
-  revStr = "";
-  for (i = str.length - 1; i >= 0 ; i--){
-    revStr = revStr + str[i];
-  }
-  if (revStr == str) {
-      return true;
-  } else {
-      return false;
-  }
+  str = str.toLowerCase().replace(/[^a-z]/g, "");
+  var revStr = str.split('').reverse().join('');
+  if (revStr == str) return true;
+  return false;
 }
 
-
-
-palindrome("eye");
+debug(palindrome("eye"));
