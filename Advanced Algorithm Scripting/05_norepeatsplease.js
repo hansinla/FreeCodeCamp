@@ -34,4 +34,4 @@ function quicktest(str){
   return true;
 }
 
-debug(permAlone('aab'));
+debug(permAlone('abcdefa'));
