@@ -16,6 +16,6 @@ function pair(str) {
  return resultArray;
 }
 
-debug(pair("GCG"));
+debug(pair("TTGAG"));
 
  

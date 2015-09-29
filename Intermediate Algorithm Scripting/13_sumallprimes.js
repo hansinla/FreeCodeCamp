@@ -18,12 +18,10 @@ function sumPrimes(num) {
     }
 
     // sum of primes
-    var sum = 0;
-    for (i = 0; i < primes.length; i++) {
-    	sum += primes[i];
-    }
-    return sum;
+    return primes.reduce(function(a, b){
+        return a+b ;
+    });
+
 }
 
-debug(sumPrimes(10));
-
+debug(sumPrimes(10000));

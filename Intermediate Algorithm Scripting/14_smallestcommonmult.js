@@ -12,7 +12,7 @@ function smallestCommons(arr) {
 	if (arr.indexOf(0) != -1) return 0;
 
 	// sort the numbers in array
-	arr.sort(function (a, b) { return a - b });
+	arr.sort(function (a, b) { return a - b; });
 
 	for (var i = arr[1] ; i >= arr[0] ; i--) {
 		range.push(i);
