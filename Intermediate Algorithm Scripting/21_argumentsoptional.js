@@ -1,4 +1,4 @@
-var test = function add() {
+function add() {
   if(arguments.length === 1){
     if(typeof arguments[0] === "number"){
     	var firstVar = arguments[0];
@@ -16,8 +16,6 @@ var test = function add() {
 }
 //add(2)(3);
 //var sum2And = add(2); return sum2And(3); // 5
-		
-		
 
 
-debug(test(2)(3));
+debug(ad(2)(3));

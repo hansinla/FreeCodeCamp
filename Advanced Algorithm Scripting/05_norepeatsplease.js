@@ -1,37 +1,47 @@
-var permutations = [];
+// Return the number of total permutations of the provided string
+// that don't have repeated consecutive letters.
+//
+// For example, 'aab' should return 2 because it has 6 total permutations,
+// but only 2 of them don't have the same letter (in this case 'a') repeating.
 
 function permAlone(str) {
-  if (quicktest(str)) return 0;
-  var total = [];
-  doPerm(str, []);
-  permutations.forEach(function(item){
-    var unique = true;
-    for (var i = 0; i < item.length - 1; i++) {
-      if (item[i] == item[i + 1]) unique = false;
-    }
-    if (unique) total.push(item);
-
+  var perms = permutations(str);
+  perms = perms.filter(function(perm){
+      for (var i = 0; i < perm.length - 1; i++) {
+        if (perm[i] == perm[i+1]) {return false;}
+      }
+      return true;
   });
-  return total.length;
+  return perms.length;
 }
 
-function doPerm(str, arr) {
-    if (typeof (str) == 'string') str = str.split('');
-    if (str.length === 0) permutations.push(arr.join(''));
-    for (var i = 0; i < str.length; i++) {
-        var x = str.splice(i, 1);
-        arr.push(x);
-        doPerm(str, arr);
-        arr.pop();
-        str.splice(i, 0, x);
-    }
+function permutations(str){
+  var arr = str.split(''),
+      len = arr.length, 
+      perms = [],
+      rest,
+      picked,
+      restPerms,
+      next;
+
+      if (len === 0)
+          return [str];
+
+      for (var i=0; i<len; i++)
+      {
+          rest = Object.create(arr);
+          picked = rest.splice(i, 1);
+
+          restPerms = permutations(rest.join(''));
+
+         for (var j=0, jLen = restPerms.length; j< jLen; j++)
+         {
+             next = picked.concat(restPerms[j]);
+             perms.push(next.join(''));
+         }
+      }
+   return perms;
 }
 
-function quicktest(str){
-  for (var i = 0; i < str.length - 1; i++) {
-    if (str[i] != str[i+1]) return false;
-  }
-  return true;
-}
 
-debug(permAlone('abcdefa'));
+debug(permAlone('zzzzzzzz'));

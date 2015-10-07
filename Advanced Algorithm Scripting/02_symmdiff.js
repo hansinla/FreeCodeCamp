@@ -30,7 +30,7 @@ function sym(x) {
 	return args.reduce(function(arr1, arr2){
 		return arr1.diff(arr2).concat(arr2.diff(arr1));
 	});
-};
+}
 
 //debug(sym([1, 2, 3], [5, 2, 1, 4]));
 //debug(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5], [1, 4, 5]));

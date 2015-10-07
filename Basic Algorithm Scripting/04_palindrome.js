@@ -6,7 +6,7 @@
 // }
 
 function palindrome(str) {
-  str = str.toLowerCase().replace(/[^a-z]/g, "");
+  str = str.toLowerCase().replace(/[^a-z^0-9]/g, "");
   return (str == str.split('').reverse().join(''));
 }
 

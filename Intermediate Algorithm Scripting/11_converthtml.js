@@ -10,7 +10,7 @@ function convert(str) {
 		"<": "&lt;",
 		">": "&gt;",
 		"\"": "&quot;",
-		"\'": "&#39;"
+		"\'": "&apos;"
 	};
 
 	for (var i = 0; i < str.length; i++) {
@@ -20,9 +20,7 @@ function convert(str) {
 			retStr = retStr + str[i];
 		}
 	}
-
-
-  // &colon;&rpar;
+  
   return retStr;
 }
 
