@@ -14,6 +14,7 @@ function friendly(arr) {
 	"June", "July", "August", "September", "October", "November", "December"];
 	var convDate1 = "", convDate2 = "";
 	var yearCanBeInferred = ((date1.year == date2.year) || ( date1.year == date2.year -1 && date2.month < date1.month));
+  debug(yearCanBeInferred);
 
   convDate1 += months[date1.month] +  " ";
   convDate1 += addOrdinal(date1.day);
@@ -29,9 +30,9 @@ function friendly(arr) {
 
   convDate2  += addOrdinal(date2.day);
 
-  if (!yearCanBeInferred || (date1.month != date2.month && date1.year == date2.year)){
-    convDate2 += ", " + date2.year;
-  }
+if (!yearCanBeInferred) {
+  convDate2 += ", " + date2.year;
+}
 
   if (arr[0] == arr[1]) {
     return [convDate1 + ", " + date1.year];
@@ -59,7 +60,7 @@ return n+(s[(v-20)%10]||s[v]||s[0]);
 }
 
 
-debug(friendly(['2017-01-01', '2017-01-01']));
+debug(friendly(["2016-03-01", "2016-05-05"]));
 /*
 assert.deepEqual(friendly(['2015-07-01', '2015-07-04']), ['July 1st','4th'], 'ending month should be omitted since it is already mentioned');ending month should be omitted since it is already mentioned: expected 'July 1 , 4' to deeply equal [ 'July 1st', '4th' ]
 assert.deepEqual(friendly(['2015-12-01', '2016-02-03']), ['December 1st','February 3rd'], 'one month apart can be inferred it is the next year');one month apart can be inferred it is the next year: expected 'December 1 2015, 2 3 2016' to deeply equal [ 'December 1st', 'February 3rd' ]
