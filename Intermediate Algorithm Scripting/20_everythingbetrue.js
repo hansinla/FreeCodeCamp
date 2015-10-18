@@ -1,7 +1,6 @@
 function every(collection, pre) {
   // Does everyone have one of these?
 
-
   for (var i = 0; i < collection.length; i++) {
   	if (!collection[i].hasOwnProperty(pre))
   		{
