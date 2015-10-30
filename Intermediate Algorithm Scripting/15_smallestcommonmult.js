@@ -3,6 +3,22 @@ Find the smallest number that evenly divides all numbers in the provided range.
 The range will be an array of two numbers that will not necessarily be in numerical order.
  */
 
+/*
+The easiest way to get the least common multiple of numbers  n_{1}, n_{2}, n_{3},...,n_{i}
+is to express them as a product of prime numbers (factorize them).
+If we multiply together all prime numbers used in these products in their highest power,
+we get the least common multiple.
+
+Example
+
+Find the least common multiple of 6, 8, 15.
+
+6 = 2*3 = 2^1 * 3^1
+8 = 2*2*2 = 2^3
+15 = 5*3 = 5^1 * 3^1
+lcm(6, 8, 15) = 2^3 * 3^1 * 5^1 = 120
+ */
+
 function smallestCommons(arr) {
 	// Method using a table
 	var lcmArray = [1], range = [], notDone = false, multiplier = 1;
