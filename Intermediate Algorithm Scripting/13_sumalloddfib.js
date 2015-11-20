@@ -9,11 +9,8 @@ function sumFibs(num) {
 		return 0;
 	}
 
-	var fibArr = [];
+	var fibArr = [0, 1];
 	var sum = 0;
-
-	fibArr[0] = 0;
-	fibArr[1] = 1;
 
 	for (var i = 2; i <= num + 1; i++) {
 		fibArr[i] = fibArr[i - 1] + fibArr[i - 2];
@@ -26,4 +23,4 @@ function sumFibs(num) {
   return sum;
 }
 
-debug(sumFibs(4));
+debug(sumFibs(100));
