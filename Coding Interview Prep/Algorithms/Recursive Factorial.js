@@ -3,6 +3,7 @@ function sumFactorialDigits(n) {
     let factorial = fact(BigInt(n));
     let factStr = factorial.toString();
     let strNumbers = factStr.split('');
+    console.log(strNumbers);
     for (let i = 0; i < strNumbers.length; i++){
         sum += parseInt(strNumbers[i]);
     }
